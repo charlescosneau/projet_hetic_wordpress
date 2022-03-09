@@ -21,3 +21,6 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+!hetic_wordpress.sql
+
+.DS_Store
