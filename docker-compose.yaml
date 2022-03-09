@@ -17,7 +17,7 @@ services:
       MYSQL_DATABASE: hetic_wordpress
       MYSQL_ROOT_PASSWORD: password
     volumes:
-      - ./data.sql:/docker-entrypoint-initdb.d/hetic_wordpress.sql
+      - ./hetic_wordpress.sql:/docker-entrypoint-initdb.d/dump.sql
 
   phpmyadmin:
     image: phpmyadmin
