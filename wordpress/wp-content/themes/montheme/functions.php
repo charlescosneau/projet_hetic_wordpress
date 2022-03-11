@@ -1,10 +1,14 @@
 <?php
 function montheme_supports () {
-    add_theme_support( 'title-tag' );
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+    add_theme_support('menus');
+    register_nav_menu('header', 'En tête du menu');
+    register_nav_menu('footer', 'Pied de page');
 }
 
 function montheme_register_assets () {
-    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('wphetic-style', get_stylesheet_uri());
 }
 
 

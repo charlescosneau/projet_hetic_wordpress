@@ -7,3 +7,14 @@
     width: 300px;
     height: 300px;
 }
+
+.view-container {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: red;
+}
