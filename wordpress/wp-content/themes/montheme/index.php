@@ -19,6 +19,7 @@ border: 1px solid black;
                     <a class="card-link" href="<?php the_permalink() ?>">Voir plus</a>
                 </div>
             <?php endwhile ?>
+            <?php the_posts_pagination(); ?>
         <?php else : ?>
             <h1>Pas d'articles</h1>
         <?php endif; ?>
