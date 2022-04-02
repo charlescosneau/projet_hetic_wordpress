@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  background-color: black;
+}
+.container-logo {
+  display: flex;
+  background: white;
+}
+.logo {
+  width: 100px;
+}
+.logo-text {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.container-ul {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.container-ul li a {
+  color: white;
+}
+.nav-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
