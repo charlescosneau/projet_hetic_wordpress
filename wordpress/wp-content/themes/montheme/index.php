@@ -13,15 +13,21 @@
     <div class="view-container">
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
-                <div class="card">
-                    <h5 class="card-title"><?php the_title() ?></h5>
-                    <?php the_post_thumbnail('card-header', ['class' => 'card_img_top', 'alt' => '']) ?>
-                    <h6 class="card-category"><?php the_category() ?></h6>
-                    <p class="card-text"><?php the_content('En voir plus') ?></p>
-                    <p><?php the_terms(get_the_ID(), 'recette') ?></p>
-                    <button>
-                        <a class="card-link" href="<?php the_permalink() ?>">Voir plus</a>
-                    </button>
+               <?php $backgroundurl = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
+               <?php echo'<div class="card" style="background: url('. $backgroundurl.'); background-size: cover;"> '?>
+                    <div class="card-content">
+                        <h5 class="card-title"><?php the_title() ?></h5>
+                        <h6 class="card-category"><?php the_category() ?></h6>
+                        <div class="card-text">
+                            <?php the_content('En voir plus') ?>
+                            <?php the_terms(get_the_ID(), 'recette') ?>
+                        </div>
+                    </div>
+                    <div class="voirplus">
+                       <button>
+                            <a class="card-link" href="<?php the_permalink() ?>">Voir plus</a>
+                        </button> 
+                    </div>
                 </div>
             <?php endwhile ?>
             <?php montheme_pagination() ?>

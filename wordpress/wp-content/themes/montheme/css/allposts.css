@@ -10,17 +10,81 @@
 }
 
 .card {
-    height: 10vw;
+    height: 250px;
     width: 100%;
-    border: 1px solid black;
+    border: none;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 5px;
+    background-size: cover;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.3);
 }
 
-.card > h5 {
+.card-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.card-title {
     font-size: 1.2em;
 }
 
-.card > h6 {
+.card-category {
+    border-radius: 10px;
+    background-color: #ff6666;
+    padding: 3px 8px;
     font-size: 0.8em;
+    width: fit-content;
+}
+
+.card-category > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-text {
+    overflow: auto;
+    height: 100px;
+}
+
+.voirplus {
+    bottom: 0;
+}
+
+.voirplus > button {
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 3px 8px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card-link {
+    font-weight: 600;
+    color: #ff6666;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .view-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .view-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .view-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
