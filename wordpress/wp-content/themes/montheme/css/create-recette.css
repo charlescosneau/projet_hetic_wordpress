@@ -1,0 +1,47 @@
+.container-recette{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(216, 216, 216);
+    padding: 10vh 0;
+}
+.container-recette h1{
+    text-align: center;
+}
+
+.container-recette form{
+
+}
+
+.container-recette form .item-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.container-recette form .item-form input{
+    border-radius: 10px;
+    padding: 5px 25px;
+    border: 1px solid #111;
+}
+
+.container-recette form .image-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.container-recette form .submit{
+    background-color: #ff6666;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+.container-recette form .submit:hover{
+    background-color: #ff7474;
+}
