@@ -1,0 +1,7 @@
+.container-404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 21.5vh 0;
+}
