@@ -17,6 +17,8 @@ function montheme_register_assets()
     wp_enqueue_style('reset-style', get_template_directory_uri() . '/css/reset.css');
     wp_enqueue_style('allposts-style', get_template_directory_uri() . '/css/allposts.css');
     wp_enqueue_style('first-style', get_template_directory_uri() . '/css/style.css');
+	wp_enqueue_style('single-post-style', get_template_directory_uri() . '/css/single-post.css');
+	wp_enqueue_style('connexion-style', get_template_directory_uri() . '/css/connexion.css');
 }
 
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
