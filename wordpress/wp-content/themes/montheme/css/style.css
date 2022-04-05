@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .background-container {
@@ -37,17 +38,4 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.card {
-  height: 300px;
-  border: 1px solid black;
-}
-
-.view-container {
-  width: 80vw;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 1vw;
-  column-gap: 1vw;
-  justify-items: center;
 }
