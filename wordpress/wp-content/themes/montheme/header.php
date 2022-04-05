@@ -26,15 +26,15 @@
                 <?= get_search_form() ?>
             </div>
         <?php endif; ?>
-        <div>
+        <div class="authentification">
             <?php $user = wp_get_current_user(); ?>
             <?php if ($user->ID == 0) : ?>
-                <a style="color: white" href="<?php echo bloginfo('url'); ?>/login">Se connecter</a>
-                <a style="color: white" href="<?php echo bloginfo('url'); ?>/register">S'inscrire</a>
+                <a class="btn-login" href="<?php echo bloginfo('url'); ?>/login">Se connecter</a>
+                <a class="btn-register" href="<?php echo bloginfo('url'); ?>/register">S'inscrire</a>
             <?php else : ?>
-                <p style="color: white">Salut <?php echo $user->user_login; ?></p>
-                <a style="color: white" href="<?php echo bloginfo('url'); ?>/logout">Se déconnecter</a>
-                <a style="color: white" href="<?php echo bloginfo('url'); ?>/profil">Mon profil</a>
+                <p style="color: black">Salut <?php echo $user->user_login; ?></p>
+                <a style="color: black" href="<?php echo bloginfo('url'); ?>/logout">Se déconnecter</a>
+                <a style="color: black" href="<?php echo bloginfo('url'); ?>/profil">Mon profil</a>
             <?php endif; ?>
         </div>
     </nav>
