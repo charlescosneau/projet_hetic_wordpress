@@ -12,8 +12,8 @@ function montheme_supports()
 
 function montheme_register_assets()
 {
-	wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css');
-	wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css');
+    wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css');
+    wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css');
     wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css');
     wp_enqueue_style('reset-style', get_template_directory_uri() . '/css/reset.css');
     wp_enqueue_style('allposts-style', get_template_directory_uri() . '/css/allposts.css');
