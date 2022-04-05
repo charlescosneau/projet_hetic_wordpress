@@ -12,6 +12,7 @@ function montheme_supports()
 
 function montheme_register_assets()
 {
+
     wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css');
     wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css');
     wp_enqueue_style('reset-style', get_template_directory_uri() . '/css/reset.css');
@@ -105,3 +106,29 @@ add_action('after_setup_theme', 'remove_admin_bar');
 add_action('after_setup_theme', 'montheme_supports');
 add_filter('document_title_separator', 'montheme_title_separator');
 add_filter('document_title_separator', 'montheme_document_title_parts');
+
+add_action('admin_post_create-recette', function () {
+
+    $post_args = array(
+        'post_content' => $_POST['post_content'],
+        'post_title' => $_POST['post_title'],
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'post_author' => get_current_user_id(),
+        'post_category' => [
+            $_POST['post_category']
+        ],
+    );
+
+    wp_verify_nonce($_POST['create-recette-name'], 'create-recette-action');
+
+    $postId = wp_insert_post($post_args);
+
+    if ($postId) {
+        $media = media_handle_upload('post_img', $postId);
+        if (!is_wp_error($media)) {
+            set_post_thumbnail($postId, $media);
+        } 
+    }
+    header('Location:' . $_POST['post_title']);
+});
