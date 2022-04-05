@@ -17,6 +17,10 @@
     margin-left: 5vw;
     font-size: 20px;
     margin-top: 3vh;
+    border-radius: 10px;
+    background-color: #ff6666;
+    padding: 3px 8px;
+    width: fit-content;
 }
 
 .post li {
@@ -24,8 +28,7 @@
 }
 
 .post a {
-    color: #FFB1AD;
-    text-decoration: underline;
+    color: white;
 }
 
 .post p {
