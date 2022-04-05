@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* BACKGROUND FRONT PAGE */
 .background-container {
   background: url("../images/fond-wp.jpeg") no-repeat center fixed;
   height: 100vh;
@@ -29,7 +29,6 @@
   color: white;
 }
 
-
 .cta-home {
   position: absolute;
   bottom: 20%;
@@ -39,16 +38,4 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-.card {
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-}
-
-.view-container {
-  width: 80vw;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }

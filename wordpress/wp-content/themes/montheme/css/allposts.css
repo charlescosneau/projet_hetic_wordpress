@@ -1,0 +1,26 @@
+.view-container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1vw;
+    column-gap: 1vw;
+    justify-items: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.card {
+    height: 10vw;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card > h5 {
+    font-size: 1.2em;
+}
+
+.card > h6 {
+    font-size: 0.8em;
+}
