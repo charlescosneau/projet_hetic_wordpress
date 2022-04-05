@@ -5,6 +5,19 @@
   width: 120px;
 }
  .nav {
+  background: none;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-page{
+  background: none;
+  width: 100%;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,13 +30,21 @@ a{
 .container-ul {
   display: flex;
   list-style: none;
+  margin-left: 30px;
 }
 .container-ul li{
   margin: 0 30px;
 }
 .container-ul a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-page .container-ul a{
   color: #111;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .authentification{
@@ -31,23 +52,80 @@ a{
 }
 
 .authentification .btn-login{
-  background: #111;
+  background: #ff6666;
   color: white;
   border-radius: 13px;
   padding: 10px 15px;
+  margin-right: 20px;
   transition: all 0.3s;
-  border: 1px solid #111;
+  border: 2px solid #ff6666;
 }
 .authentification .btn-login:hover{
-  background-color: white;
-  border: 1px solid #111;
-  color: black;
+  background: none;
+  border: 2px solid #ff6666;
+  color: white;
 }
 
 .authentification .btn-register{
+  color: white;
+}
+
+.authentification .username{
+  transform: translateY(-20px);
+  color: white;
+}
+
+.nav-page .authentification .btn-login{
+  background: #ff6666;
+  color: white;
+  border-radius: 13px;
+  padding: 10px 15px;
+  margin-right: 20px;
+  transition: all 0.3s;
+  border: 2px solid #ff6666;
+}
+.nav-page .authentification .btn-login:hover{
+  background: none;
+  border: 2px solid #ff6666;
   color: black;
 }
 
+.nav-page .authentification .btn-register{
+  color: black;
+}
+
+.nav-page .authentification .username{
+  transform: translateY(-20px);
+  color: #111;
+}
+
+.nav-search input{
+  border-radius: 25px;
+  background-color: #fff;
+  border: 1px solid #111;
+  padding: 15px 25px;
+}
+.nav-search input::placeholder{
+  color: #111;
+}
+
+.nav-search button{
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #ff6666;
+  border: none;
+  color: white;
+  transform: translate(-50px, 7px);
+  cursor: pointer;
+}
+.nav-search button:hover{
+  background-color: rgba(255, 102, 102, 0.8);
+}
+
+.nav-search button svg{
+  margin-top: 3px;
+}
 /*
 .container-logo {
   display: flex;

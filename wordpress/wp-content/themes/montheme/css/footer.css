@@ -7,8 +7,25 @@
     color: white;
 }
 
-.container-ul-footer {
-    flex: 1;
+.container-footer{
     display: flex;
-    justify-content: space-around;
-  }
+    justify-content: center;
+}
+
+.container-ul-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-ul-footer li{
+    margin: 0 20px;
+}
+
+.container-ul-footer li a {
+    color: #fff;
+}
+.copyright p{
+    color: #fff;
+    text-align: center;
+}

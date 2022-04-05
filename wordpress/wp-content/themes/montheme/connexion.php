@@ -33,7 +33,7 @@ if (!empty($_POST)) {
         </div>
         <div>
             <label for="user_password">Votre mot de passe</label><br />
-            <input type="passwordd" id="user_password" name="user_password">
+            <input type="password" id="user_password" name="user_password">
         </div>
         <div>
             <input type="checkbox" id="remember" name="remember">

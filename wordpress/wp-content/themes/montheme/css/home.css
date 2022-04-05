@@ -1,0 +1,15 @@
+.cta-home {
+    position: absolute;
+    bottom: 20%;
+    background-color: #ff9933;
+    padding: 15px 50px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.cta-home:hover {
+    background-color: #ffa952;
+}
