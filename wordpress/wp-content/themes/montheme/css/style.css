@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 .home {
   display: flex;
@@ -29,10 +29,6 @@
   color: white;
 }
 
-.cta-home {
-  position: absolute;
-  bottom: 20%;
-}
 
 .container-all-card {
   display: flex;

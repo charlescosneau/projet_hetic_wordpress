@@ -70,6 +70,11 @@ a{
   color: white;
 }
 
+.authentification .username{
+  transform: translateY(-20px);
+  color: white;
+}
+
 .nav-page .authentification .btn-login{
   background: #ff6666;
   color: white;
@@ -87,6 +92,11 @@ a{
 
 .nav-page .authentification .btn-register{
   color: black;
+}
+
+.nav-page .authentification .username{
+  transform: translateY(-20px);
+  color: #111;
 }
 
 .nav-search input{

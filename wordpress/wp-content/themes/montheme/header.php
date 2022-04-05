@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php if (!is_home()) : ?>
+    <?php if (is_front_page( )) : ?>
     <nav class="nav"> 
         <div class="container-logo">
             <a href="<?php echo home_url(); ?>">
@@ -34,9 +34,9 @@
                 <a class="btn-login" href="<?php echo bloginfo('url'); ?>/login">Se connecter</a>
                 <a class="btn-register" href="<?php echo bloginfo('url'); ?>/register">S'inscrire</a>
             <?php else : ?>
-                <p style="color: black">Salut <?php echo $user->user_login; ?></p>
-                <a style="color: black" href="<?php echo bloginfo('url'); ?>/logout">Se déconnecter</a>
-                <a style="color: black" href="<?php echo bloginfo('url'); ?>/profil">Mon profil</a>
+                <p class="username">Bienvenue <?php echo $user->user_login; ?> !</p>
+                <a class="btn-login" href="<?php echo bloginfo('url'); ?>/profil">Mon profil</a>
+                <a class="btn-register"  href="<?php echo bloginfo('url'); ?>/logout">Se déconnecter</a> 
             <?php endif; ?>
         </div>
     </nav>
@@ -65,9 +65,9 @@
                 <a class="btn-login" href="<?php echo bloginfo('url'); ?>/login">Se connecter</a>
                 <a class="btn-register" href="<?php echo bloginfo('url'); ?>/register">S'inscrire</a>
             <?php else : ?>
-                <p style="color: black">Salut <?php echo $user->user_login; ?></p>
-                <a style="color: black" href="<?php echo bloginfo('url'); ?>/logout">Se déconnecter</a>
-                <a style="color: black" href="<?php echo bloginfo('url'); ?>/profil">Mon profil</a>
+                <p class="username">Bienvenue <?php echo $user->user_login; ?></p>
+                <a class="btn-login" href="<?php echo bloginfo('url'); ?>/profil">Mon profil</a>
+                <a class="btn-register"  href="<?php echo bloginfo('url'); ?>/logout">Se déconnecter</a> 
             <?php endif; ?>
         </div>
     </nav>
