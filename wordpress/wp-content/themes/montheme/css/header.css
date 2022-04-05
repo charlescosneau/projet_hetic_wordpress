@@ -1,11 +1,14 @@
-.nav {
+.logo{
+  width: 100px;
+  margin-left: 100px;
+}
+ .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  width: 100vw;
-  background-color: black;
+  /* background-color: #111; */
 }
+/*
 .container-logo {
   display: flex;
   background: white;
@@ -32,4 +35,4 @@
   flex: 1;
   display: flex;
   justify-content: center;
-}
+} */

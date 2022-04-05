@@ -12,8 +12,7 @@
     <nav class="nav">
         <a href="<?php echo home_url(); ?>">
             <div class="container-logo">
-                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo-marmishlag.png">
-                <p class="logo-text">Marmishlag</p>
+                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo_marmishlag.png">
             </div>
         </a>
         <?php wp_nav_menu([
