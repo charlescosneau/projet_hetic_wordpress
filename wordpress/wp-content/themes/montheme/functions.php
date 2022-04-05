@@ -12,11 +12,7 @@ function montheme_supports()
 
 function montheme_register_assets()
 {
-<<<<<<< HEAD
-
-=======
     wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css');
->>>>>>> c8ec9f5e5dcc304b67425415c792464350998903
     wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css');
     wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css');
     wp_enqueue_style('reset-style', get_template_directory_uri() . '/css/reset.css');
