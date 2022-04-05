@@ -1,3 +1,10 @@
+.container-all-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
 .view-container {
     width: 90vw;
     display: grid;
@@ -50,6 +57,8 @@
 .card-text {
     overflow: auto;
     height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .voirplus {
