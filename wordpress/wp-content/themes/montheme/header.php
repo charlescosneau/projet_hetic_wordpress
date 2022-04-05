@@ -34,7 +34,6 @@
                 <a class="btn-login" href="<?php echo bloginfo('url'); ?>/login">Se connecter</a>
                 <a class="btn-register" href="<?php echo bloginfo('url'); ?>/register">S'inscrire</a>
             <?php else : ?>
-                <p class="username">Bienvenue <?php echo $user->user_login; ?> !</p>
                 <a class="btn-login" href="<?php echo bloginfo('url'); ?>/profil">Mon profil</a>
                 <a class="btn-register"  href="<?php echo bloginfo('url'); ?>/logout">Se déconnecter</a> 
             <?php endif; ?>
