@@ -1,18 +1,18 @@
-.container {
-  padding: 100px 0px!important;
-}
-/* BACKGROUND FRONT PAGE */
-
-.background-container {
+*{
   margin: 0;
   padding: 0;
-  background: url("./images/fond-wp.jpeg") no-repeat center fixed;
-  min-width: 100vw;
-  min-height: 80vh !important;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND FRONT PAGE */
+.background-container {
+  background: url("../images/fond-wp.jpeg") no-repeat center fixed;
+  height: 100vh;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .home {
   display: flex;
