@@ -1,0 +1,53 @@
+.container-profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding-top: 5vw;
+}
+
+.card-all-profil {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1vw;
+    column-gap: 1vw;
+    justify-items: center;
+    margin-bottom: 5vw;
+    margin-top: 10px;
+}
+
+.informations {
+    align-self: start;
+    margin-left: 5vw;
+}
+
+.card-profil {
+    height: 75px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 5px;
+    background-size: cover;
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.supprimer > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.supprimer {
+    background-color: red;
+    padding: 4px 8px;
+    border-radius: 20px;
+    width: fit-content;
+}

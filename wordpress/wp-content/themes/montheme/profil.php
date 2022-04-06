@@ -31,15 +31,15 @@ $total = count($current_user_posts);
 <div class="container-profil">
     <div class="informations">
         <h1>Mes informations</h1>
+        <h3>Vous avez <?= $total; ?> recettes :</h3>
     </div>
-    <h3>Vous avez <?= $total; ?> recettes :</h3>
     <div class="card-all-profil">
         <?php while ($query->have_posts()) : ?>
-            <div class="card-profil">
+            <?php $backg = wp_get_attachment_url(get_post_thumbnail_id($query->ID)); ?>
+            <?php echo '<div class="card-profil" style="background: url(' . $backg . '); background-size: cover;"> ' ?>
                 <?php $query->the_post(); ?>
                 <h5 class="card-title"><?php the_title() ?></h5>
-                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                <li><a href="<?= get_delete_post_link(get_the_ID()) ?>">Supprimer</a></li>
+                <li class="supprimer"><a href="<?= get_delete_post_link(get_the_ID()) ?>">Supprimer</a></li>
             </div>
         <?php endwhile; ?>
     </div>
