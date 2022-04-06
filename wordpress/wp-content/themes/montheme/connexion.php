@@ -20,26 +20,26 @@ if (!empty($_POST)) {
 ?>
 <?php get_header() ?>
 <div class="container-connexion">
-    <h1>Se connecter</h1>
+    <h1 class="connexion-title">Se connecter</h1>
     <?php if ($error) : ?>
         <div class="error">
             <?php echo $error; ?>
         </div>
     <?php endif ?>
-    <form action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="post">
+    <form class="connexion-form" action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="post">
         <div>
-            <label for="user_login">Votre pseudo</label><br />
-            <input type="text" id="user_login" name="user_login">
+            <label class="connexion-label" for="user_login">Votre pseudo</label><br />
+            <input class="connexion-input" type="text" id="user_login" name="user_login">
         </div>
         <div>
-            <label for="user_password">Votre mot de passe</label><br />
-            <input type="password" id="user_password" name="user_password">
+            <label class="connexion-label" for="user_password">Votre mot de passe</label><br />
+            <input class="connexion-input" type="password" id="user_password" name="user_password">
         </div>
         <div>
             <input type="checkbox" id="remember" name="remember">
-            <label for="remember">Se souvenir de moi</label><br />
+            <label class="connexion-remember" for="remember">Se souvenir de moi</label><br />
         </div>
-        <input type="submit" value="Se connecter">
+        <input class="connexion-submit" type="submit" value="Se connecter">
     </form>
 </div>
 <?php get_footer() ?>

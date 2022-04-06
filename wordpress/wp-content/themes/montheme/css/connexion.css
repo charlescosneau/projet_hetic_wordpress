@@ -1,0 +1,48 @@
+.container-connexion {
+    text-align: center;
+}
+
+.connexion-title {
+    font-size: 40px;
+}
+
+.connexion-form {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+.connexion-label {
+    font-size: 25px;
+}
+
+.connexion-input {
+    margin-top: 2vh;
+    width: 30vw;
+    height: 6vh;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 4vh;
+}
+
+.connexion-remember {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.connexion-submit {
+    background: #ff6666;
+    color: white;
+    border-radius: 13px;
+    padding: 10px 15px;
+    margin-right: 20px;
+    transition: all 0.3s;
+    border: 2px solid #ff6666;
+    margin-top: 3vh;
+}
+
+.connexion-submit:hover {
+    background: none;
+    border: 2px solid #ff6666;
+    color: black;
+    cursor: pointer;
+}
