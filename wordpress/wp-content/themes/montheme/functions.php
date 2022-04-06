@@ -12,14 +12,16 @@ function montheme_supports()
 
 function montheme_register_assets()
 {
+    wp_enqueue_style('404-style', get_template_directory_uri() . '/css/404.css');
+    wp_enqueue_style('create-recette-style', get_template_directory_uri() . '/css/create-recette.css');
     wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css');
     wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css');
     wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css');
     wp_enqueue_style('reset-style', get_template_directory_uri() . '/css/reset.css');
     wp_enqueue_style('allposts-style', get_template_directory_uri() . '/css/allposts.css');
     wp_enqueue_style('first-style', get_template_directory_uri() . '/css/style.css');
-	wp_enqueue_style('single-post-style', get_template_directory_uri() . '/css/single-post.css');
-	wp_enqueue_style('connexion-style', get_template_directory_uri() . '/css/connexion.css');
+    wp_enqueue_style('single-post-style', get_template_directory_uri() . '/css/single-post.css');
+    wp_enqueue_style('connexion-style', get_template_directory_uri() . '/css/connexion.css');
 }
 
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
@@ -131,7 +133,14 @@ add_action('admin_post_create-recette', function () {
         $media = media_handle_upload('post_img', $postId);
         if (!is_wp_error($media)) {
             set_post_thumbnail($postId, $media);
-        } 
+        }
     }
     header('Location:' . $_POST['post_title']);
 });
+
+add_action('trashed_post', 'redirect_after_trashing', 10);
+function redirect_after_trashing()
+{
+    wp_redirect(home_url() . '/profil');
+    exit;
+}
