@@ -4,6 +4,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: #f0f0f0;
+    padding-top: 5vw;
 }
 
 .view-container {
@@ -13,7 +14,6 @@
     row-gap: 1vw;
     column-gap: 1vw;
     justify-items: center;
-    margin-top: 5vw;
 }
 
 .card {
@@ -116,6 +116,32 @@
 }
 
 
+.prout {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.toto {
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 20px;
+    background-color: rgb(255, 195, 195);
+}
+
+.toto > a {
+    color: #ff6666;
+    font-weight: 600;
+}
+
+.alignement {
+    align-self: start;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
 
 @media screen and (max-width: 1200px) {
     .view-container {

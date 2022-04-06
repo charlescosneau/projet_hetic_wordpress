@@ -17,12 +17,15 @@ $categories = get_categories(array(
     <?php endforeach; ?>
 </ul>
 <div class="container-all-card">
-    <div class="prout">
-        <?php foreach ($categories as $category) : ?>
-            <div class="toto">
-                <a href="<?= home_url() . '/category' . '/' . $category->slug ?>"><?php echo $category->name ?></a>
-            </div>
-        <?php endforeach ?>
+    <div class="alignement">
+        <h1>Filtrer par catégorie</h1>
+        <div class="prout">
+            <?php foreach ($categories as $category) : ?>
+                <div class="toto">
+                    <a href="<?= home_url() . '/category' . '/' . $category->slug ?>"><?php echo $category->name ?></a>
+                </div>
+            <?php endforeach ?>
+        </div>
     </div>
     <div class="view-container">
         <?php if (have_posts()) : ?>
