@@ -29,13 +29,18 @@ $total = count($current_user_posts);
 ?>
 <?php get_header() ?>
 <div class="container-profil">
-    <h1>Mes informations</h1>
+    <div class="informations">
+        <h1>Mes informations</h1>
+    </div>
     <h3>Vous avez <?= $total; ?> recettes :</h3>
-    <div>
+    <div class="card-all-profil">
         <?php while ($query->have_posts()) : ?>
-            <?php $query->the_post(); ?>
-            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-            <li><a href="<?= get_delete_post_link(get_the_ID()) ?>">Supprimer</a></li>
+            <div class="card-profil">
+                <?php $query->the_post(); ?>
+                <h5 class="card-title"><?php the_title() ?></h5>
+                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                <li><a href="<?= get_delete_post_link(get_the_ID()) ?>">Supprimer</a></li>
+            </div>
         <?php endwhile; ?>
     </div>
 </div>

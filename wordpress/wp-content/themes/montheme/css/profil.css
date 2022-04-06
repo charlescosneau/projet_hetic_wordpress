@@ -1,0 +1,21 @@
+.container-profil{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.card-all-profil{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-profil{
+    background-color: grey ;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.card-profil li{
+    list-style: none;
+
+}
