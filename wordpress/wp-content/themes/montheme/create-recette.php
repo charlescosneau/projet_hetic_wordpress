@@ -17,11 +17,11 @@ $categories = get_categories(array(
     <form action="<?php echo admin_url('admin-post.php'); ?>" method="post" enctype="multipart/form-data">
         <div class="item-form">
             <label for="post_title">Titre de la recette</label>
-            <input type="text" value="<?php echo isset($d['post_title']) ? $d['post_title'] : ''; ?>" id="post_title" name="post_title">
+            <input type="text" value="<?php echo isset($d['post_title']) ? $d['post_title'] : ''; ?>" id="post_title" name="post_title" placeholder="Titre de la recette">
         </div>
         <div class="item-form">
             <label for="post_content">Contenu de la recette</label>
-            <input type="text" value="<?php echo isset($d['post_content']) ? $d['post_content'] : ''; ?>" id="post_content" name="post_content">
+            <input type="text" value="<?php echo isset($d['post_content']) ? $d['post_content'] : ''; ?>" id="post_content" name="post_content" placeholder="Contenu de la recette">
         </div>
         <div class="item-form">
             <label for="post_category">Categories de la recette</label>
