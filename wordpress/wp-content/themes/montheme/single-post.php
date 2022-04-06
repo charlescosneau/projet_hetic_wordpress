@@ -8,7 +8,12 @@
             <div class="post-content">
                 <p class="post-text"><?php the_content(); ?></p>
             </div>
-        </div>
+            <?php
+            if (is_user_logged_in()) {
+                comments_template();
+            }
+            ?>
+        </div>  
     <?php endwhile ?>
 <?php else : ?>
     <h1>Pas d'articles</h1>
