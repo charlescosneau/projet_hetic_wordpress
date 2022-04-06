@@ -116,20 +116,20 @@
 }
 
 
-.prout {
+.categories {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.toto {
+.category {
     text-decoration: none;
     padding: 4px 8px;
     border-radius: 20px;
     background-color: rgb(255, 195, 195);
 }
 
-.toto > a {
+.category > a {
     color: #ff6666;
     font-weight: 600;
 }

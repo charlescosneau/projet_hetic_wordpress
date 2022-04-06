@@ -19,9 +19,9 @@ $categories = get_categories(array(
 <div class="container-all-card">
     <div class="alignement">
         <h1>Filtrer par catégorie</h1>
-        <div class="prout">
+        <div class="categories">
             <?php foreach ($categories as $category) : ?>
-                <div class="toto">
+                <div class="category">
                     <a href="<?= home_url() . '/category' . '/' . $category->slug ?>"><?php echo $category->name ?></a>
                 </div>
             <?php endforeach ?>
