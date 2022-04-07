@@ -12,7 +12,7 @@ if (!empty($_POST)) {
         if (!is_email($d['user_email'])) {
             $error = 'Veuillez entrer un email valide';
         } else {
-            wp_insert_user(array(
+            $user = wp_insert_user(array(
                 'user_login' => $d['user_login'],
                 'user_pass' => $d['user_pass'],
                 'user_email' => $d['user_email'],
