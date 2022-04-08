@@ -107,8 +107,8 @@ CREATE TABLE `phw_options` (
 --
 
 INSERT INTO `phw_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
-(1, 'siteurl', 'http://localhost:3000', 'yes'),
-(2, 'home', 'http://localhost:3000', 'yes'),
+(1, 'siteurl', '23.100.14.30', 'yes'),
+(2, 'home', '23.100.14.30', 'yes'),
 (3, 'blogname', 'Projet Hetic Wordpress', 'yes'),
 (4, 'blogdescription', 'Un site utilisant WordPress', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
